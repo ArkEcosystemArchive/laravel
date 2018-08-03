@@ -1,0 +1,50 @@
+{
+    "name": "arkecosystem/laravel",
+    "description": "A Laravel bridge for Ark Core.",
+    "keywords": ["laravel", "ark", "blockchain", "crypto", "currency"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Brian Faust",
+        "email": "brian@ark.io",
+        "homepage": "https://github.com/faustbrian"
+    }],
+    "require": {
+        "php": "^7.1",
+        "arkecosystem/client": "^0.1.0",
+        "graham-campbell/manager": "^4.0"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^5.0",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArkEcosystem\\Ark\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArkEcosystem\\Tests\\Ark\\": "tests"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ArkEcosystem\\Ark\\ArkServiceProvider"
+            ],
+            "aliases": {
+                "Ark": "ArkEcosystem\\Ark\\Facades\\Ark"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
