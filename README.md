@@ -4,7 +4,7 @@
     <img src="https://github.com/ArkEcosystem/laravel/blob/master/banner.png" />
 </p>
 
-> A simple PHP Cryptography Implementation for the Ark Blockchain.
+> A Laravel bridge for Ark Core.
 
 [![Build Status](https://travis-ci.org/ArkEcosystem/laravel.svg)](https://travis-ci.org/ArkEcosystem/laravel)
 [![Codecov](https://img.shields.io/codecov/c/github/arkecosystem/laravel/master.svg)](https://codecov.io/gh/arkecosystem/laravel)
