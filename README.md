@@ -1,19 +1,19 @@
-# Ark PHP - Crypto
+# Ark Laravel
 
 <p align="center">
-    <img src="https://github.com/ArkEcosystem/php-crypto/blob/master/banner.png" />
+    <img src="https://github.com/ArkEcosystem/laravel/blob/master/banner.png" />
 </p>
 
 > A simple PHP Cryptography Implementation for the Ark Blockchain.
 
-[![Build Status](https://travis-ci.org/ArkEcosystem/php-crypto.svg)](https://travis-ci.org/ArkEcosystem/php-crypto)
-[![Codecov](https://img.shields.io/codecov/c/github/arkecosystem/php-crypto/master.svg)](https://codecov.io/gh/arkecosystem/php-crypto)
-[![Latest Version](https://img.shields.io/github/release/ArkEcosystem/php-crypto.svg)](https://github.com/ArkEcosystem/php-crypto/releases)
+[![Build Status](https://travis-ci.org/ArkEcosystem/laravel.svg)](https://travis-ci.org/ArkEcosystem/laravel)
+[![Codecov](https://img.shields.io/codecov/c/github/arkecosystem/laravel/master.svg)](https://codecov.io/gh/arkecosystem/laravel)
+[![Latest Version](https://img.shields.io/github/release/ArkEcosystem/laravel.svg)](https://github.com/ArkEcosystem/laravel/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Documentation
 
-You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.ark.io/developers/sdk/cryptography/php.html).
+You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.ark.io/developers/sdk/frameworks/laravel.html).
 
 ## Security
 
