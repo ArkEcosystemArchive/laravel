@@ -6,7 +6,7 @@
 
 > A Laravel bridge for Ark Core.
 
-[![Build Status](https://badgen.now.sh/travis/ArkEcosystem/laravel)](https://badgen.now.sh/travis/ArkEcosystem/laravel)
+[![Build Status](https://badgen.now.sh/travis/ArkEcosystem/laravel)](https://travis-ci.org/ArkEcosystem/laravel)
 [![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/laravel)](https://codecov.io/gh/arkecosystem/laravel)
 [![Latest Version](https://badgen.now.sh/github/release/ArkEcosystem/laravel)](https://github.com/ArkEcosystem/laravel/releases)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
