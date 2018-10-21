@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.2-browsers
+    working_directory: ~/arkecosystem/laravel
+    environment:
+      setup: lowest
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-
+      - run:
+          name: Install
+          command: |
+            if [[ $setup = 'stable' ]]; then composer update --prefer-dist --no-interaction --prefer-stable --no-suggest; fi
+            if [[ $setup = 'lowest' ]]; then composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable --no-suggest; fi
+      - save_cache:
+          paths:
+            - ./vendor
+          key: v1-dependencies-{{ checksum "composer.json" }}
+      - run:
+          name: Unit tests
+          command: ./vendor/bin/phpunit --coverage-clover=coverage.xml --coverage-text
+      - store_test_results:
+          path: tests/_output
+      - store_artifacts:
+          path: tests/_output
+          destination: test-results
+      - run:
+          name: Codecov
+          when: on_success
+          command: bash <(curl -s https://codecov.io/bash)
