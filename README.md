@@ -1,15 +1,17 @@
-# Ark Laravel
+# ARK Laravel
 
 <p align="center">
     <img src="https://github.com/ArkEcosystem/laravel/blob/master/banner.png" />
 </p>
 
-> A Laravel bridge for Ark Core.
+> A Laravel bridge for ARK Core.
 
 [![Build Status](https://badgen.now.sh/circleci/github/ArkEcosystem/laravel)](https://circleci.com/gh/ArkEcosystem/laravel)
 [![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/laravel)](https://codecov.io/gh/arkecosystem/laravel)
 [![Latest Version](https://badgen.now.sh/github/release/ArkEcosystem/laravel)](https://github.com/ArkEcosystem/laravel/releases)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
+
+> Lead Maintainer: [Brian Faust](https://github.com/faustbrian)
 
 ## Documentation
 
@@ -21,9 +23,8 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../../../contributors)
+This project exists thanks to all the people who [contribute](../../contributors).
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [ARK Ecosystem](https://ark.io)
