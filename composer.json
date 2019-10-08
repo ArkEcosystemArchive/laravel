@@ -10,7 +10,7 @@
     }],
     "require": {
         "php": "^7.1",
-        "arkecosystem/client": "^0.1.0",
+        "arkecosystem/client": "^1.0.0",
         "graham-campbell/manager": "^4.0"
     },
     "require-dev": {
