@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace ArkEcosystem\Ark;
 
 use ArkEcosystem\Client\Connection;
+use Illuminate\Support\Arr;
 use InvalidArgumentException;
 
 /**
@@ -28,9 +29,9 @@ class ArkFactory
      *
      * @param array $config
      *
-     * @return \ArkEcosystem\Ark\Client
+     * @return \ArkEcosystem\Client\Connection
      */
-    public function make(array $config): Client
+    public function make(array $config): Connection
     {
         $config = $this->getConfig($config);
 
@@ -56,7 +57,7 @@ class ArkFactory
             }
         }
 
-        return array_only($config, ['host', 'api_version']);
+        return Arr::only($config, ['host', 'api_version']);
     }
 
     /**

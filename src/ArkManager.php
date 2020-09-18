@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace ArkEcosystem\Ark;
 
+use ArkEcosystem\Client\Connection;
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
 
@@ -58,9 +59,9 @@ class ArkManager extends AbstractManager
      *
      * @param array $config
      *
-     * @return \ArkEcosystem\Ark\Client
+     * @return \ArkEcosystem\Client\Connection
      */
-    protected function createConnection(array $config): Client
+    protected function createConnection(array $config): Connection
     {
         return $this->factory->make($config);
     }
