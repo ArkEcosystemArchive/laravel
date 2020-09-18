@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace ArkEcosystem\Ark;
 
 use ArkEcosystem\Client\Connection;
+use Illuminate\Support\Arr;
 use InvalidArgumentException;
 
 /**
@@ -56,7 +57,7 @@ class ArkFactory
             }
         }
 
-        return array_only($config, ['host', 'api_version']);
+        return Arr::only($config, ['host', 'api_version']);
     }
 
     /**
