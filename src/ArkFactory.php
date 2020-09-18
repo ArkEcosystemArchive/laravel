@@ -28,9 +28,9 @@ class ArkFactory
      *
      * @param array $config
      *
-     * @return \ArkEcosystem\Ark\Client
+     * @return \ArkEcosystem\Client\Connection
      */
-    public function make(array $config): Client
+    public function make(array $config): Connection
     {
         $config = $this->getConfig($config);
 
